@@ -205,7 +205,7 @@ export default function Shop() {
         <section className="bg-[#1e1510] py-20 border-b border-[#3d2f25]">
           <div className="container mx-auto px-6 text-center">
             <p className="text-[#a08878] tracking-widest uppercase text-xs mb-4 animate-in slide-in-from-bottom-4">Авторская парфюмерия</p>
-            <h1 className="text-5xl font-serif font-bold text-white mb-4 animate-in slide-in-from-bottom-4 tracking-wide">
+            <h1 className="text-5xl font-serif font-bold  mb-4 animate-in slide-in-from-bottom-4 tracking-wide">
               Лавка ароматов
             </h1>
             <p className="text-xl text-[#a08878] max-w-2xl mx-auto animate-in slide-in-from-bottom-4 delay-100 italic">
@@ -218,7 +218,7 @@ export default function Shop() {
         {cart.length > 0 && (
           <button 
             onClick={scrollToForm}
-            className="fixed bottom-8 right-8 z-50 bg-clay-800 text-white p-4 shadow-2xl hover:bg-clay-900 transition-all active:scale-95 flex items-center gap-2"
+            className="fixed bottom-8 right-8 z-50 bg-clay-800  p-4 shadow-2xl hover:bg-clay-900 transition-all active:scale-95 flex items-center gap-2"
           >
             <ShoppingBag className="w-6 h-6" />
             <span className="font-bold">{cart.length}</span>
@@ -235,7 +235,7 @@ export default function Shop() {
                   onClick={() => setSelectedCategory(cat)}
                   className={`px-6 py-2 text-sm tracking-widest uppercase font-medium transition-all ${
                     selectedCategory === cat
-                      ? "bg-clay-800 text-white"
+                      ? "bg-clay-800"
                       : "bg-clay-100 text-clay-700 hover:bg-clay-200"
                   }`}
                 >
@@ -374,7 +374,7 @@ function ProductCard({ product, idx, addToCart, openModal }: any) {
           <span className="text-xl font-bold text-clay-800 font-serif">{product.price.toLocaleString()} ₽</span>
           <button 
             onClick={() => addToCart(product)}
-            className="bg-clay-800 text-white px-4 py-2 text-xs tracking-widest uppercase hover:bg-clay-900 transition-colors"
+            className="bg-clay-800 px-4 py-2 text-xs tracking-widest uppercase hover:bg-clay-900 transition-colors"
           >
             В корзину
           </button>
