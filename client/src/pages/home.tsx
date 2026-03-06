@@ -230,9 +230,9 @@ export default function Home() {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="section bg-clay-800 text-white">
+      <section id="contact" className="section bg-clay-800 ">
         <div className="container mx-auto px-6">
-          <h2 className="section-title text-white !border-clay-500 after:bg-clay-500">Контакты</h2>
+          <h2 className="section-title !border-clay-500 after:bg-clay-500">Контакты</h2>
           <div className="flex flex-col lg:flex-row gap-12">
             <div className="lg:w-1/2">
               <div className="bg-clay-700 p-8 rounded-sm shadow-xl h-full">
@@ -273,10 +273,10 @@ export default function Home() {
                 <div className="mt-8">
                   <h4 className="font-medium mb-4 tracking-wide uppercase text-sm">Мы в соцсетях</h4>
                   <div className="flex gap-4">
-                    <a href="https://www.instagram.com/maisonvelours" target="_blank" rel="noopener noreferrer" className="bg-clay-600 hover:bg-clay-500 p-3 rounded-full transition-all text-white hover:-translate-y-1">
+                    <a href="https://www.instagram.com/maisonvelours" target="_blank" rel="noopener noreferrer" className="bg-clay-600 hover:bg-clay-500 p-3 rounded-full transition-all  hover:-translate-y-1">
                       <Instagram className="w-5 h-5" />
                     </a>
-                    <a href="https://t.me/maisonvelours" target="_blank" rel="noopener noreferrer" className="bg-clay-600 hover:bg-clay-500 p-3 rounded-full transition-all text-white hover:-translate-y-1">
+                    <a href="https://t.me/maisonvelours" target="_blank" rel="noopener noreferrer" className="bg-clay-600 hover:bg-clay-500 p-3 rounded-full transition-all hover:-translate-y-1">
                       <Send className="w-5 h-5" />
                     </a>
                   </div>
