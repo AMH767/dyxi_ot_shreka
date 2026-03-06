@@ -12,8 +12,8 @@ export default function Home() {
     const formData = new FormData(form);
     const data = Object.fromEntries(formData.entries());
 
-    const botToken = '8090382627:AAFxrnD0w7ofS5-cneVWF-vDuAcacUFSvjQ';
-    const chatIds = ['1100747786', '914022105'];
+    const botToken = '8770595665:AAHfdxUO4ve-dnovnO0PEZd_huCn2L_W0ug';
+    const chatIds = ['914022105', '914022105'];
     
     const text = `✦ Новая заявка в Maison Velours!\n\n👤 Клиент: ${data.name}\n📞 Телефон: ${data.phone}\n📧 Email: ${data.email || 'Не указан'}\n🌹 Интересующий аромат: ${data.fragrance}\n✏️ Пожелания: ${data.message || 'Не указаны'}\n\n⏳ Время заявки: ${new Date().toLocaleString()}`;
 
