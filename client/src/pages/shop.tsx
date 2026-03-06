@@ -160,8 +160,8 @@ export default function Shop() {
     const formData = new FormData(form);
     const userData = Object.fromEntries(formData.entries());
 
-    const botToken = '8090382627:AAFxrnD0w7ofS5-cneVWF-vDuAcacUFSvjQ';
-    const chatIds = ['1100747786', '914022105'];
+    const botToken = '8770595665:AAHfdxUO4ve-dnovnO0PEZd_huCn2L_W0ug';
+    const chatIds = ['914022105', '914022105'];
     
     const cartDetails = cart.map(item => `• ${item.title} x${item.quantity} — ${(item.price * item.quantity).toLocaleString()} ₽`).join('\n');
     
